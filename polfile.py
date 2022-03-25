@@ -32,6 +32,7 @@ def fetchToken(username,password):
         print("---------------token generated successfully---------------")
         return 1
     except Exception as e:
+        print(e)
         print("token generation failed! please check your credentials")
         return 0
     
