@@ -23,6 +23,5 @@ if __name__ == '__main__':
     main(username=args.u,password=args.p,organizationId=args.o,environmentId=args.e,assetId=args.at,policyFilePath=args.pp)
 
     
- def main(username,password,policyFilePath,organizationId,environmentId,assetId):
-    print("aaa")
-    return 0
+def main(username,password,policyFilePath,organizationId,environmentId,assetId):
+    print("kkk")
