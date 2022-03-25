@@ -2,7 +2,7 @@ from cgitb import reset
 import json
 from msilib.schema import AppId
 from traceback import print_tb
-
+import requests
 import argparse
 
 def fetchPolicyDetails(policyFilePath):
