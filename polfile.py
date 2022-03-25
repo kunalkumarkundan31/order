@@ -5,6 +5,15 @@ from traceback import print_tb
 
 import argparse
 
+def fetchPolicyDetails(policyFilePath):
+    # Opening JSON file
+    f = open(policyFilePath)
+    # returns JSON object as
+    data = json.load(f)
+    # closing JSON file
+    f.close()
+    return data
+
 def main(username,password,policyFilePath,organizationId,environmentId,assetId):
     print(username)
     return 0
