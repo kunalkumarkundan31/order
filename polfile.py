@@ -6,7 +6,7 @@ from traceback import print_tb
 import argparse
 
 def main(username,password,policyFilePath,organizationId,environmentId,assetId):
-    print("kkk")
+    print(username)
     return 0
 
 if __name__ == '__main__':
