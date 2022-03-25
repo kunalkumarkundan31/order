@@ -1,3 +1,10 @@
+from cgitb import reset
+import json
+from msilib.schema import AppId
+from traceback import print_tb
+import requests
+import argparse
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Apply the policy')
     parser.add_argument('--u', metavar='username', required=True,
