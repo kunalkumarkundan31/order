@@ -14,6 +14,24 @@ def fetchPolicyDetails(policyFilePath):
     f.close()
     return data
 
+def fetchToken(username,password):
+    global token
+    tokenUrl = "https://anypoint.mulesoft.com/accounts/login"
+    headers = {"Content-Type": "application/json","Accept":"application/json"}
+    payload = {
+        "username": username,
+        "password": password
+    }   
+    try:
+        response = requests.post(tokenUrl, headers=headers, json=payload)
+        tokenResponse = json.loads(response.content) 
+        token = tokenResponse['access_token']
+        print("---------------token generated successfully---------------")
+        return 1
+    except Exception as e:
+        print("token generation failed! please check your credentials")
+        return 0
+    
 def main(username,password,policyFilePath,organizationId,environmentId,assetId):
     print(username)
     return 0
