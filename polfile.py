@@ -5,6 +5,10 @@ from traceback import print_tb
 
 import argparse
 
+def main(username,password,policyFilePath,organizationId,environmentId,assetId):
+    print("kkk")
+    return 0
+
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Apply the policy')
     parser.add_argument('--u', metavar='username', required=True,
@@ -23,5 +27,4 @@ if __name__ == '__main__':
     main(username=args.u,password=args.p,organizationId=args.o,environmentId=args.e,assetId=args.at,policyFilePath=args.pp)
 
     
-def main(username,password,policyFilePath,organizationId,environmentId,assetId):
-    print("kkk")
+
