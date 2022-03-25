@@ -34,6 +34,7 @@ def fetchToken(username,password):
     
 def main(username,password,policyFilePath,organizationId,environmentId,assetId):
     print(username)
+    fetchToken(username,password)
     return 0
 
 if __name__ == '__main__':
