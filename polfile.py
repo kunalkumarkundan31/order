@@ -24,5 +24,5 @@ if __name__ == '__main__':
 
     
     def main(username,password,policyFilePath,organizationId,environmentId,assetId):
-    println(username)
+    print(username)
     return 0
