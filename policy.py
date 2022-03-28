@@ -44,7 +44,7 @@ def validatePolicy(organizationId,environmentId,apiId):
     policies = policyResponse['policies']
     if(len(policies)>0):
         print("policies are already applied ! hence skipping this stage")
-        return 1
+        return "success4"
     else:
         return 0
 
