@@ -106,13 +106,13 @@ def main(username,password,policyFilePath,organizationId,environmentId,assetId):
                 return "Success"    
             else:
                 if(applyPolicy(organizationId,environmentId,apiId,policyDetails)):
-                    return 1
+                    return "success1"
                 else:
-                    return 0
+                    return "fail1"
         else:
-            return 0
+            return "fail2"
     else:
-        return 0
+        return "fail3"
     
 
 if __name__ == '__main__':
