@@ -103,7 +103,7 @@ def main(username,password,policyFilePath,organizationId,environmentId,assetId):
     if(fetchToken(username,password)):
         if(fetchApiId(organizationId,environmentId,assetId)):
             if(validatePolicy(organizationId,environmentId,apiId)):
-                return 1    
+                return "Success"    
             else:
                 if(applyPolicy(organizationId,environmentId,apiId,policyDetails)):
                     return 1
