@@ -99,6 +99,7 @@ def applyPolicy(organizationId,environmentId,apiId,policyDetails):
         return 0
 
 def main(username,password,policyFilePath,organizationId,environmentId,assetId):
+    print("222")
     policyDetails = fetchPolicyDetails(policyFilePath)
     if(fetchToken(username,password)):
         if(fetchApiId(organizationId,environmentId,assetId)):
@@ -116,6 +117,7 @@ def main(username,password,policyFilePath,organizationId,environmentId,assetId):
     
 
 if __name__ == '__main__':
+    print("123")
     parser = argparse.ArgumentParser(description='Apply the policy')
     parser.add_argument('--u', metavar='username', required=True,
                         help='anypoint portal username')
@@ -130,5 +132,6 @@ if __name__ == '__main__':
     parser.add_argument('--pp', metavar='policyFilePath', required=True,
                         help='policy file location')
     args = parser.parse_args()
-    return main(username=args.u,password=args.p,organizationId=args.o,environmentId=args.e,assetId=args.at,policyFilePath=args.pp)
+    main(username=args.u,password=args.p,organizationId=args.o,environmentId=args.e,assetId=args.at,policyFilePath=args.pp)
+    print("1234")
     
