@@ -134,4 +134,5 @@ if __name__ == '__main__':
     args = parser.parse_args()
     main(username=args.u,password=args.p,organizationId=args.o,environmentId=args.e,assetId=args.at,policyFilePath=args.pp)
     print("1234")
+    return("SUCC")
     
