@@ -130,4 +130,5 @@ if __name__ == '__main__':
     parser.add_argument('--pp', metavar='policyFilePath', required=True,
                         help='policy file location')
     args = parser.parse_args()
-    main(username=args.u,password=args.p,organizationId=args.o,environmentId=args.e,assetId=args.at,policyFilePath=args.pp)
+    return main(username=args.u,password=args.p,organizationId=args.o,environmentId=args.e,assetId=args.at,policyFilePath=args.pp)
+    
